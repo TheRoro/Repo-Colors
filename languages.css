@@ -1,0 +1,163 @@
+.none {
+    background: #f3f3f3 !important;
+    color: #24292d !important;
+}
+
+.JavaScript {
+    background: rgb(232,213,89);
+    background: linear-gradient(103deg, rgba(232,213,89,1) 0%, rgba(236,219,103,1) 100%);
+    color: #323330;
+}
+
+.Vue {
+    background: #4EBA88 !important;
+    color: #2D3E50 !important;
+}
+
+.Java {
+    background: rgb(194,62,62);
+    background: linear-gradient(103deg, rgba(194,62,62,1) 0%, rgba(194,78,78,1) 100%);
+    color: #ffffff;
+}
+
+.TypeScript {
+    background: #2D79C7 !important;
+    color: #ffffff !important;
+}
+
+.Python {
+    background: #336B99 !important;
+    color: #ebebeb !important;
+}
+
+.Go {
+    background: #69D7E4 !important;
+    color: #07425d !important;
+}
+
+.HTML {
+    background: rgb(235,123,75);
+    background: linear-gradient(103deg, rgba(235,123,75,1) 0%, rgba(228,106,53,1) 100%);
+    color: #ffffff;
+}
+
+.C\2B\2B {
+    background: #004283 !important;
+    color: #c4e0ff !important;
+}
+
+.C\23 {
+    background: rgb(96,34,190);
+    background: linear-gradient(103deg, rgba(96,34,190,1) 0%, rgba(105,49,191,1) 100%);
+    color: #f0e6ff;
+}
+
+.CSS {
+    background: rgb(51,141,215);
+    background: linear-gradient(103deg, rgba(51,141,215,1) 0%, rgba(29,137,223,1) 100%);
+    color: #e8f5ff;
+}
+
+.SCSS, .sass {
+    background: rgb(213,110,163);
+    background: linear-gradient(103deg, rgba(213,110,163,1) 0%, rgba(222,99,162,1) 100%);
+    color: #FEFEFE;
+}
+
+.Jupyter {
+    background: #3b3b3b !important;
+    color: #F37821 !important;
+}
+
+.Vim, .VimL {
+    background: #019833 !important;
+    color: #ffffff !important;
+}
+
+.TeX {
+    background: #e2e2e2 !important;
+    color: #202020 !important;
+}
+
+.Swift {
+    background: rgb(255,90,58);
+    background: linear-gradient(103deg, rgba(255,90,58,1) 0%, rgba(255,100,70,1) 100%);
+    color: #ffffff;
+}
+
+.Kotlin {
+    background: rgb(203,91,172);
+    background: linear-gradient(103deg, rgba(203,91,172,1) 0%, rgba(234,122,62,1) 49%, rgba(248,137,9,1) 100%);
+    color: rgb(0, 0, 0);
+}
+
+.Dart {
+    background: rgb(0,196,179);
+    background: linear-gradient(103deg, rgba(0,196,179,1) 0%, rgba(34,211,197,1) 100%);
+    color: #363233;
+}
+
+.Gherkin {
+    background: #4f2a68 !important;
+    color: #e2c4f7 !important;
+}
+
+.Objective-C {
+    background: #2a3868 !important;
+    color: #a7bbff !important;
+}
+
+.Rebol, .C, .PureBasic, .Makefile, .Visual, .D, .Lisp {
+    background: #424242 !important;
+    color: #dddddd !important;
+}
+
+.R {
+    background: #BEC0C3 !important;
+    color: #0a396e !important;
+}
+
+.PowerShell, .Shell {
+    background: #020202 !important;
+    color: #f5f5f5 !important;
+}
+
+.Cuda {
+    background: #1a1918 !important;
+    color: #7ab547 !important;
+}
+
+.Lua {
+    background: #7081ca !important;
+    color: #001263 !important;
+}
+
+.PHP {
+    background: #7081ca !important;
+    color: #000311 !important;
+}
+
+.Ruby {
+    background: #ca6666 !important;
+    color: #580000 !important;
+}
+
+.CoffeeScript {
+    background: #8f7051 !important;
+    color: #3f1f00 !important;
+}
+
+.Rust {
+    background: #bd8c7d !important;
+    color: #2e0b00 !important;
+}
+
+.Dockerfile {
+    background: #0db7ed !important;
+    color: #0f3642 !important;
+}
+
+.null, .AutoHotkey {
+    background: #24292d !important;
+    color: #fff !important;
+}
