@@ -1,0 +1,23 @@
+.card {
+    transition: all .2s ease-in-out;
+    background: #24292d;
+    color: #fff;
+    border: 0 !important;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.desc {
+    opacity: .8;
+}
+
+.background-none {
+    background: none !important;
+}
