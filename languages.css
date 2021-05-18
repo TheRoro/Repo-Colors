@@ -1,5 +1,5 @@
 .none {
-    background: #f3f3f3 !important;
+    background: #d1d1d1 !important;
     color: #24292d !important;
 }
 
@@ -53,14 +53,14 @@
 }
 
 .CSS {
-    background: rgb(51,141,215);
-    background: linear-gradient(103deg, rgba(51,141,215,1) 0%, rgba(29,137,223,1) 100%);
+    background: rgb(29,137,223);
+    background: linear-gradient(103deg, rgba(29,137,223,1) 0%, rgba(51,141,215,1) 100%);
     color: #e8f5ff;
 }
 
 .SCSS, .sass {
-    background: rgb(213,110,163);
-    background: linear-gradient(103deg, rgba(213,110,163,1) 0%, rgba(222,99,162,1) 100%);
+    background: rgb(222,99,162);
+    background: linear-gradient(103deg, rgba(222,99,162,1) 0%, rgba(213,110,163,1) 100%);
     color: #FEFEFE;
 }
 

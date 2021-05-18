@@ -1,5 +1,4 @@
 var cards = document.getElementsByClassName('pinned-item-list-item')
-console.log(cards.length)
 
 for (let i = 0; i < cards.length; i++) {
     cards[i].classList.add('card')
@@ -8,7 +7,6 @@ for (let i = 0; i < cards.length; i++) {
     if(languageSpan) {
         language = languageSpan.innerHTML.split(" ")
         language = language[0]
-        console.log(language)
         languageSpan.classList.add(language)
         languageSpan.classList.add('background-none')
         cards[i].classList.add(language)
@@ -20,7 +18,6 @@ for (let i = 0; i < cards.length; i++) {
         
         var link = cards[i].getElementsByTagName('a')[0]
         link.classList.add(language)
-        console.log(link)
 
         var owner = cards[i].getElementsByClassName('owner')
         if(owner.length > 0) {
@@ -43,21 +40,32 @@ for (let i = 0; i < cards.length; i++) {
         dot[0].parentNode.removeChild(dot[0])
         
         var stars = cards[i].getElementsByClassName('pinned-item-meta')
-        if(stars && stars.length > 0 && stars[0]) {
+        if(stars.length > 0 && stars[0]) {
             stars[0].classList.add(language)
+            stars[0].classList.add('background-none')
             stars[0].classList.remove('Link--muted')
         }
-        
-        console.log(language)
+
+        var grabbers = cards[i].getElementsByClassName('octicon-grabber')
+        if(grabbers.length > 0) {
+            grabbers[0].classList.add(language)
+            grabbers[0].classList.add('background-none')
+        }
     }
     else {
         cards[i].classList.add('none')
         var title = cards[i].getElementsByClassName('repo')
         title[0].classList.add('none')
         title[0].classList.add('bold')
+
         var stars = cards[i].getElementsByClassName('pinned-item-meta')
-        if(stars && stars.length > 0 && stars[0]) {
+        if(stars.length > 0 && stars[0]) {
             stars[0].classList.add('none')
+        }
+
+        var grabbers = cards[i].getElementsByClassName('octicon-grabber')
+        if(grabbers.length > 0) {
+            grabbers[0].classList.add('none')
         }
     }
 }
