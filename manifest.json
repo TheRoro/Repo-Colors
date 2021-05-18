@@ -1,12 +1,12 @@
 {
-    "name": "GitHub Color",
-    "description": "Beautiful colors for your GitHub Card Repos.",
-    "version": "1.0.0",
+    "name": "Repo Colors",
+    "description": "Beautiful colors for your pinned repositories.",
+    "version": "1.1.0",
     "manifest_version": 2,
     "icons": {
-        "32": "./32px.png",
-        "64": "./64px.png",
-        "128": "./128px.png"
+        "32": "./32.png",
+        "64": "./64.png",
+        "128": "./128.png"
     },
     "background": {
         "scripts": ["./background.js"]
@@ -16,8 +16,7 @@
         "default_popup": "popup.html"
     },
     "permissions": [
-        "tabs",
-        "https://www.google.com/*"
+        "tabs"
     ],
     "content_scripts": [{
         "css": ["styles.css", "languages.css"],
