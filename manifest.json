@@ -1,25 +1,25 @@
 {
     "name": "Repo Colors",
     "description": "Beautiful colors for your pinned repositories.",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "manifest_version": 2,
     "icons": {
-        "32": "./32.png",
-        "64": "./64.png",
-        "128": "./128.png"
+        "32": "./icons/32.png",
+        "64": "./icons/64.png",
+        "128": "./icons/128.png"
     },
     "background": {
         "scripts": ["./background.js"]
     },
-    "options_page": "./options.html",
+    "options_page": "./html/options.html",
     "browser_action": {
-        "default_popup": "popup.html"
+        "default_popup": "./html/popup.html"
     },
     "permissions": [
         "tabs"
     ],
     "content_scripts": [{
-        "css": ["styles.css", "languages.css"],
+        "css": ["./styles/styles.css", "./styles/languages.css"],
         "js": ["foreground.js"],
         "matches": ["https://github.com/*"]
     }]

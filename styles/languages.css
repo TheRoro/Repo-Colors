@@ -15,9 +15,8 @@
 }
 
 .Java {
-    background: rgb(194,62,62);
-    background: linear-gradient(103deg, rgba(194,62,62,1) 0%, rgba(194,78,78,1) 100%);
-    color: #ffffff;
+    background: #ee6565 !important;
+    color: #290000 !important;
 }
 
 .TypeScript {
