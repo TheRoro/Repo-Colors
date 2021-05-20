@@ -1,0 +1,56 @@
+.card {
+    transition: all .2s ease-in-out;
+    background: #24292d;
+    color: #fff;
+    pointer-events: none;
+    border: 0 !important;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-link {
+    pointer-events: auto;
+    transition: all .2s ease-in-out;
+}
+
+.card-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.all-links {
+    pointer-events: auto;
+    transition: all .2s ease-in-out;
+}
+
+.all-links:hover {
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.desc {
+    opacity: .8;
+}
+
+.background-none {
+    background: none !important;
+}
+
+.pl-s {
+    color: #0067ba !important;
+}
+
+.pl-k {
+    color: #00b76e !important;
+}
+
+.blob-num {
+    color: rgb(0 0 0 / 30%) !important;
+}
