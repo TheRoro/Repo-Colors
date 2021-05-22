@@ -16,9 +16,20 @@ for (let i = 0; i < cards.length; i++) {
             icon.classList.remove('color-text-secondary')
         }
         
-        var link = cards[i].getElementsByTagName('a')[0]
-        link.classList.add(language)
-
+        var links = cards[i].getElementsByTagName('a')
+        for (let i = 0; i < links.length; i++) {
+                links[i].classList.add(language)
+                links[i].classList.add('background-none')
+            if(i == 0) {
+                links[i].classList.add('card-link')
+            }
+            else {
+                links[i].classList.add('all-links')
+                links[i].classList.remove('Link--muted')
+                links[i].classList.add('medium')
+            } 
+        }
+        
         var owner = cards[i].getElementsByClassName('owner')
         if(owner.length > 0) {
             owner[0].classList.add(language)
@@ -32,18 +43,30 @@ for (let i = 0; i < cards.length; i++) {
         title[0].classList.add('background-none')
 
         var desc = cards[i].getElementsByClassName('pinned-item-desc')
-        desc[0].classList.add(language)
-        desc[0].classList.add('desc')
-        desc[0].classList.remove('color-text-secondary')
+        if(desc.length > 0 && desc[0]) {
+            desc[0].classList.add(language)
+            desc[0].classList.add('desc')
+            desc[0].classList.add('background-none')
+            desc[0].classList.remove('color-text-secondary')
+        }
         
+        var forked = cards[i].getElementsByClassName('color-text-secondary')
+
+        if(forked.length > 0) {
+            forked[0].classList.remove('color-text-secondary')
+        }
+
         var dot = cards[i].getElementsByClassName('repo-language-color')
         dot[0].parentNode.removeChild(dot[0])
         
-        var stars = cards[i].getElementsByClassName('pinned-item-meta')
-        if(stars.length > 0 && stars[0]) {
-            stars[0].classList.add(language)
-            stars[0].classList.add('background-none')
-            stars[0].classList.remove('Link--muted')
+        var extras = cards[i].getElementsByClassName('pinned-item-meta')
+        if(extras.length > 0 && extras[0]) {
+            for (let i = 0; i < extras.length; i++) {
+                const element = extras[i];
+                element.classList.add(language)
+                element.classList.add('background-none')
+                element.classList.remove('Link--muted')
+            }
         }
 
         var grabbers = cards[i].getElementsByClassName('octicon-grabber')
@@ -57,15 +80,63 @@ for (let i = 0; i < cards.length; i++) {
         var title = cards[i].getElementsByClassName('repo')
         title[0].classList.add('none')
         title[0].classList.add('bold')
+        
+        var links = cards[i].getElementsByTagName('a')
+        for (let i = 0; i < links.length; i++) {
+                links[i].classList.add('none')
+                links[i].classList.add('background-none')
+            if(i == 0) {
+                links[i].classList.add('card-link')
+            }
+            else {
+                links[i].classList.add('all-links')
+                links[i].classList.remove('Link--muted')
+                links[i].classList.add('medium')
+            } 
+        }
 
-        var stars = cards[i].getElementsByClassName('pinned-item-meta')
-        if(stars.length > 0 && stars[0]) {
-            stars[0].classList.add('none')
+        var desc = cards[i].getElementsByClassName('pinned-item-desc')
+        if(desc.length > 0 && desc[0]) {
+            desc[0].classList.add('none')
+            desc[0].classList.add('desc')
+            desc[0].classList.add('background-none')
+            desc[0].classList.remove('color-text-secondary')
+        }
+
+        var forked = cards[i].getElementsByClassName('color-text-secondary')
+
+        if(forked.length > 0) {
+            forked[0].classList.remove('color-text-secondary')
+        }
+
+        var extras = cards[i].getElementsByClassName('pinned-item-meta')
+        if(extras.length > 0 && extras[0]) {
+            for (let i = 0; i < extras.length; i++) {
+                const element = extras[i];
+                element.classList.add('none')
+                element.classList.add('background-none')
+                element.classList.remove('Link--muted')
+            }
         }
 
         var grabbers = cards[i].getElementsByClassName('octicon-grabber')
         if(grabbers.length > 0) {
             grabbers[0].classList.add('none')
+        }
+
+        var codeIcon = cards[i].getElementsByClassName('octicon-code-square')
+        if(codeIcon.length > 0) {
+            codeIcon[0].classList.add('none')
+            codeIcon[0].classList.add('background-none')
+            codeIcon[0].classList.remove('color-text-secondary')
+        }
+
+        var bgGist = cards[i].getElementsByClassName('rounded-bottom-1')
+        
+        if(bgGist.length > 0 && bgGist[0]) {
+            bgGist[0].classList.add('none')
+            bgGist[0].classList.add('background-none')
+            bgGist[0].classList.remove('color-bg-tertiary')
         }
     }
 }
