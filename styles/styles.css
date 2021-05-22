@@ -31,12 +31,17 @@
     transform: scale(1);
 }
 
+.medium {
+    font-weight: 500;
+    /* text-decoration: underline; */
+}
+
 .bold {
     font-weight: 700;
 }
 
 .desc {
-    opacity: .8;
+    opacity: 1;
 }
 
 .background-none {
@@ -53,4 +58,8 @@
 
 .blob-num {
     color: rgb(0 0 0 / 30%) !important;
+}
+
+.octicon-grabber {
+    pointer-events: auto;
 }
