@@ -1,7 +1,7 @@
 {
     "name": "Repo Colors",
     "description": "Beautiful colors for your pinned repositories.",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "manifest_version": 2,
     "icons": {
         "32": "./icons/32.png",

@@ -48,16 +48,20 @@
     background: none !important;
 }
 
-.pl-s {
-    color: #0067ba !important;
+.card .pl-s, .card .pl-s .pl-pds {
+    color: #005499 !important;
 }
 
-.pl-k {
+.card .pl-k {
+    color: #6e00a1 !important;
+}
+
+.card .pl-smi {
     color: #00b76e !important;
 }
 
-.blob-num {
-    color: rgb(0 0 0 / 30%) !important;
+.card .blob-num {
+    color: rgb(0 0 0 / 60%) !important;
 }
 
 .octicon-grabber {
