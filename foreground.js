@@ -56,9 +56,6 @@ for (let i = 0; i < cards.length; i++) {
             forked[0].classList.remove('color-text-secondary')
         }
 
-        var dot = cards[i].getElementsByClassName('repo-language-color')
-        dot[0].parentNode.removeChild(dot[0])
-        
         var extras = cards[i].getElementsByClassName('pinned-item-meta')
         if(extras.length > 0 && extras[0]) {
             for (let i = 0; i < extras.length; i++) {
