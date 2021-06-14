@@ -64,6 +64,10 @@
     color: rgb(0 0 0 / 60%) !important;
 }
 
+.card .repo-language-color {
+    display: none;
+}
+
 .octicon-grabber {
     pointer-events: auto;
 }
