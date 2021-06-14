@@ -1,6 +1,7 @@
 .none {
-    background: #d1d1d1 !important;
-    color: #181818 !important;
+    background: rgb(209,209,209);
+    background: linear-gradient(103deg, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 100%);
+    color: #181818;
 }
 
 .JavaScript {
@@ -10,39 +11,45 @@
 }
 
 .Vue {
-    background: #4EBA88 !important;
-    color: #2D3E50 !important;
+    background: rgb(66,184,131);
+    background: linear-gradient(103deg, rgba(66,184,131,1) 0%, rgba(78,186,136,1) 100%);
+    color: #1f2b38;
 }
 
 .Java {
-    background: #ee6565 !important;
-    color: #290000 !important;
+    background: rgb(238,101,101);
+    background: linear-gradient(103deg, rgba(238,101,101,1) 0%, rgba(238,101,101,1) 100%);
+    color: #290000;
 }
 
 .TypeScript {
-    background: #2D79C7 !important;
-    color: #ffffff !important;
+    background: rgb(45,121,199);
+    background: linear-gradient(103deg, rgba(45,121,199,1) 0%, rgba(45,121,199,1) 100%);
+    color: #ffffff;
 }
 
 .Python {
-    background: #336B99 !important;
-    color: #ebebeb !important;
+    background: rgb(48,96,144);
+    background: linear-gradient(103deg, rgba(48,96,144,1) 0%, rgba(57,100,143,1) 100%);
+    color: #f7f7f7;
 }
 
 .Go {
-    background: #69D7E4 !important;
-    color: #07425d !important;
+    background: rgb(105,215,228);
+    background: linear-gradient(103deg, rgba(105,215,228,1) 0%, rgba(105,215,228,1) 100%);
+    color: #07425d;
 }
 
-.HTML {
+.HTML, .Groovy {
     background: rgb(224,111,61);
     background: linear-gradient(103deg, rgba(224,111,61,1) 0%, rgba(222,117,73,1) 100%);
     color: #ffffff;
 }
 
 .C\2B\2B {
-    background: #004283 !important;
-    color: #c4e0ff !important;
+    background: rgb(0,66,131);
+    background: linear-gradient(103deg, rgba(0,66,131,1) 0%, rgba(0,66,131,1) 100%);
+    color: #c4e0ff;
 }
 
 .C\23 {
@@ -64,99 +71,115 @@
 }
 
 .Jupyter {
-    background: #3b3b3b !important;
-    color: #F37821 !important;
+    background: rgb(59,59,59);
+    background: linear-gradient(103deg, rgba(59,59,59,1) 0%, rgba(59,59,59,1) 100%);
+    color: #F37821;
 }
 
 .Vim, .VimL {
-    background: #019833 !important;
-    color: #ffffff !important;
+    background: rgb(73,153,99);
+    background: linear-gradient(103deg, rgba(73,153,99,1) 0%, rgba(72,142,96,1) 100%);
+    color: #ffffff;
 }
 
 .TeX {
-    background: #e2e2e2 !important;
-    color: #202020 !important;
+    background: rgb(226,226,226);
+    background: linear-gradient(103deg, rgba(226,226,226,1) 0%, rgba(226,226,226,1) 100%);
+    color: #202020;
 }
 
 .Swift {
     background: rgb(255,90,58);
     background: linear-gradient(103deg, rgba(255,90,58,1) 0%, rgba(255,100,70,1) 100%);
-    color: #ffffff;
+    color: #411a08;
 }
 
 .Kotlin {
-    background: rgb(203,91,172);
-    background: linear-gradient(103deg, rgba(203,91,172,1) 0%, rgba(234,122,62,1) 49%, rgba(248,137,9,1) 100%);
-    color: rgb(0, 0, 0);
+    background: rgb(204,92,172);
+    background: linear-gradient(103deg, rgba(204,92,172,1) 0%, rgba(234,122,62,1) 85%);
+    color: rgb(41, 5, 43);
 }
 
 .Dart {
-    background: rgb(0,196,179);
-    background: linear-gradient(103deg, rgba(0,196,179,1) 0%, rgba(34,211,197,1) 100%);
-    color: #363233;
+    background: rgb(42,56,104);
+    background: linear-gradient(103deg, rgba(42,56,104,1) 0%, rgba(49,61,102,1) 100%);
+    color: #a7bbff;
 }
 
 .Gherkin {
-    background: #4f2a68 !important;
-    color: #e2c4f7 !important;
+    background: rgb(79,42,104);
+    background: linear-gradient(103deg, rgba(79,42,104,1) 0%, rgba(82,50,105,1) 100%);
+    color: #e2c4f7;
 }
 
 .Objective-C {
-    background: #2a3868 !important;
-    color: #a7bbff !important;
+    background: rgb(0,0,0);
+    background: linear-gradient(103deg, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 100%);
+    color: #dadada;
 }
 
-.Rebol, .C, .PureBasic, .Makefile, .Visual, .D, .Lisp {
-    background: #424242 !important;
-    color: #dddddd !important;
+.Rebol, .C, .PureBasic, .Makefile, .Visual, .D, .Lisp, .TSQL, .HCL {
+    background: rgb(66,66,66);
+    background: linear-gradient(103deg, rgba(66,66,66,1) 0%, rgba(66,66,66,1) 100%);
+    color: #dddddd;
 }
 
-.R {
-    background: #BEC0C3 !important;
-    color: #0a396e !important;
+.R, .Jsonnet {
+    background: rgb(190,192,195);
+    background: linear-gradient(103deg, rgba(190,192,195,1) 0%, rgba(205,206,209,1) 100%);
+    color: #0a396e;
 }
 
 .PowerShell, .Shell {
-    background: #020202 !important;
-    color: #f5f5f5 !important;
+    background: rgb(2,2,2);
+    background: linear-gradient(103deg, rgba(2,2,2,1) 0%, rgba(17,17,17,1) 85%);
+    color: #1fbb1f;
 }
 
 .Cuda {
-    background: #1a1918 !important;
-    color: #7ab547 !important;
+    background: rgb(26,25,24);
+    background: linear-gradient(103deg, rgba(26,25,24,1) 0%, rgba(34,33,32,1) 100%);
+    color: #7ab547;
 }
 
 .Lua {
-    background: #7081ca !important;
-    color: #001263 !important;
+    background: rgb(112,129,202);
+    background: linear-gradient(103deg, rgba(112,129,202,1) 0%, rgba(118,133,200,1) 100%);
+    color: #001263;
 }
 
 .PHP {
-    background: #7081ca !important;
-    color: #000311 !important;
+    background: rgb(112,129,202);
+    background: linear-gradient(103deg, rgba(112,129,202,1) 0%, rgba(112,129,202,1) 100%);
+    color: #000311;
 }
 
 .Ruby {
-    background: #ca6666 !important;
-    color: #580000 !important;
+    background: rgb(202,102,102);
+    background: linear-gradient(103deg, rgba(202,102,102,1) 0%, rgba(202,102,102,1) 100%);
+    color: #580000;
 }
 
 .CoffeeScript {
-    background: #8f7051 !important;
-    color: #3f1f00 !important;
+    background: rgb(143,112,81);
+    background: linear-gradient(103deg, rgba(143,112,81,1) 0%, rgba(143,112,81,1) 100%);
+    color: #3f1f00;
 }
 
 .Rust {
-    background: #bd8c7d !important;
-    color: #2e0b00 !important;
+    background: rgb(189,140,125);
+    background: linear-gradient(103deg, rgba(189,140,125,1) 0%, rgba(189,140,125,1) 100%);
+    color: #2e0b00;
 }
 
 .Dockerfile {
-    background: #0db7ed !important;
-    color: #0f3642 !important;
+    background: rgb(13,183,237);
+    background: linear-gradient(103deg, rgba(13,183,237,1) 0%, rgba(13,183,237,1) 100%);
+    color: #0f3642;
 }
 
 .null, .AutoHotkey {
-    background: #24292d !important;
-    color: #fff !important;
+    background: rgb(49,56,61);
+    background: linear-gradient(103deg, rgba(49,56,61,1) 0%, rgba(49,56,61,1) 100%);
+    color: #e6e6e6;
 }
