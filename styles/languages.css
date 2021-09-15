@@ -1,185 +1,465 @@
 .none {
-    background: rgb(209,209,209);
-    background: linear-gradient(103deg, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 100%);
-    color: #181818;
+	background: rgb(209, 209, 209);
+	background: linear-gradient(
+		103deg,
+		rgba(209, 209, 209, 1) 0%,
+		rgba(209, 209, 209, 1) 100%
+	);
+	color: #181818;
+}
+
+.none:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(209, 209, 209, 1));
 }
 
 .JavaScript {
-    background: rgb(232,213,89);
-    background: linear-gradient(103deg, rgba(232,213,89,1) 0%, rgba(236,219,103,1) 100%);
-    color: #323330;
+	background: rgb(232, 213, 89);
+	background: linear-gradient(
+		103deg,
+		rgba(232, 213, 89, 1) 0%,
+		rgba(236, 219, 103, 1) 100%
+	);
+	color: #323330;
+}
+
+.JavaScript:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(232, 213, 89, 1));
 }
 
 .Vue {
-    background: rgb(66,184,131);
-    background: linear-gradient(103deg, rgba(66,184,131,1) 0%, rgba(78,186,136,1) 100%);
-    color: #1f2b38;
+	background: rgb(66, 184, 131);
+	background: linear-gradient(
+		103deg,
+		rgba(66, 184, 131, 1) 0%,
+		rgba(78, 186, 136, 1) 100%
+	);
+	color: #1f2b38;
+}
+
+.Vue:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(66, 184, 131, 1));
 }
 
 .Java {
-    background: rgb(238,101,101);
-    background: linear-gradient(103deg, rgba(238,101,101,1) 0%, rgba(238,101,101,1) 100%);
-    color: #290000;
+	background: rgb(238, 101, 101);
+	background: linear-gradient(
+		103deg,
+		rgba(238, 101, 101, 1) 0%,
+		rgba(238, 101, 101, 1) 100%
+	);
+	color: #290000;
+}
+
+.Java:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(238, 101, 101, 1));
 }
 
 .TypeScript {
-    background: rgb(45,121,199);
-    background: linear-gradient(103deg, rgba(45,121,199,1) 0%, rgba(45,121,199,1) 100%);
-    color: #ffffff;
+	background: rgb(42, 56, 104);
+	background: linear-gradient(
+		103deg,
+		rgba(42, 56, 104, 1) 0%,
+		rgba(49, 61, 102, 1) 100%
+	);
+	color: #d3ddfd;
+}
+
+.TypeScript:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(42, 56, 104, 1));
 }
 
 .Python {
-    background: rgb(48,96,144);
-    background: linear-gradient(103deg, rgba(48,96,144,1) 0%, rgba(57,100,143,1) 100%);
-    color: #f7f7f7;
+	background: rgb(48, 96, 144);
+	background: linear-gradient(
+		103deg,
+		rgba(48, 96, 144, 1) 0%,
+		rgba(57, 100, 143, 1) 100%
+	);
+	color: #f7f7f7;
+}
+
+.Python:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(48, 96, 144, 1));
 }
 
 .Go {
-    background: rgb(105,215,228);
-    background: linear-gradient(103deg, rgba(105,215,228,1) 0%, rgba(105,215,228,1) 100%);
-    color: #07425d;
+	background: rgb(105, 215, 228);
+	background: linear-gradient(
+		103deg,
+		rgba(105, 215, 228, 1) 0%,
+		rgba(105, 215, 228, 1) 100%
+	);
+	color: #07425d;
 }
 
-.HTML, .Groovy {
-    background: rgb(224,111,61);
-    background: linear-gradient(103deg, rgba(224,111,61,1) 0%, rgba(222,117,73,1) 100%);
-    color: #ffffff;
+.Go:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(105, 215, 228, 1));
 }
 
-.C\2B\2B {
-    background: rgb(0,66,131);
-    background: linear-gradient(103deg, rgba(0,66,131,1) 0%, rgba(0,66,131,1) 100%);
-    color: #c4e0ff;
+.HTML,
+.Groovy {
+	background: rgb(224, 111, 61);
+	background: linear-gradient(
+		103deg,
+		rgba(222, 117, 73, 1) 0%,
+		rgba(224, 111, 61, 1) 100%
+	);
+	color: hsl(19, 76%, 10%);
+}
+
+.HTML:hover,
+.Groovy:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(224, 111, 61, 1));
+}
+
+.C\2b\2b {
+	background: rgb(0, 66, 131);
+	background: linear-gradient(
+		103deg,
+		rgba(0, 66, 131, 1) 0%,
+		rgba(0, 66, 131, 1) 100%
+	);
+	color: #c4e0ff;
+}
+
+.C\2b\2b:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(0, 66, 131, 1));
 }
 
 .C\23 {
-    background: rgb(96,34,190);
-    background: linear-gradient(103deg, rgba(96,34,190,1) 0%, rgba(105,49,191,1) 100%);
-    color: #f0e6ff;
+	background: rgb(96, 34, 190);
+	background: linear-gradient(
+		103deg,
+		rgba(96, 34, 190, 1) 0%,
+		rgba(105, 49, 191, 1) 100%
+	);
+	color: #f0e6ff;
+}
+
+.C\23:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(96, 34, 190, 1));
 }
 
 .CSS {
-    background: rgb(29,137,223);
-    background: linear-gradient(103deg, rgba(29,137,223,1) 0%, rgba(51,141,215,1) 100%);
-    color: #e8f5ff;
+	background: rgb(29, 137, 223);
+	background: linear-gradient(
+		103deg,
+		rgba(29, 137, 223, 1) 0%,
+		rgba(51, 141, 215, 1) 100%
+	);
+	color: #e8f5ff;
 }
 
-.SCSS, .sass {
-    background: rgb(222,99,162);
-    background: linear-gradient(103deg, rgba(222,99,162,1) 0%, rgba(213,110,163,1) 100%);
-    color: #FEFEFE;
+.CSS:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(29, 137, 223, 1));
+}
+
+.SCSS,
+.sass {
+	background: rgb(222, 99, 162);
+	background: linear-gradient(
+		103deg,
+		rgba(222, 99, 162, 1) 0%,
+		rgba(213, 110, 163, 1) 100%
+	);
+	color: #fefefe;
+}
+
+.SCSS:hover,
+.sass:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(222, 99, 162, 1));
 }
 
 .Jupyter {
-    background: rgb(59,59,59);
-    background: linear-gradient(103deg, rgba(59,59,59,1) 0%, rgba(59,59,59,1) 100%);
-    color: #F37821;
+	background: rgb(59, 59, 59);
+	background: linear-gradient(
+		103deg,
+		rgba(59, 59, 59, 1) 0%,
+		rgba(59, 59, 59, 1) 100%
+	);
+	color: #f37821;
 }
 
-.Vim, .VimL {
-    background: rgb(73,153,99);
-    background: linear-gradient(103deg, rgba(73,153,99,1) 0%, rgba(72,142,96,1) 100%);
-    color: #ffffff;
+.Jupyter:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(59, 59, 59, 1));
+}
+
+.Vim,
+.VimL {
+	background: rgb(73, 153, 99);
+	background: linear-gradient(
+		103deg,
+		rgba(73, 153, 99, 1) 0%,
+		rgba(72, 142, 96, 1) 100%
+	);
+	color: hsl(140, 100%, 92%);
+}
+
+.Vim:hover,
+.VimL:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(73, 153, 99, 1));
 }
 
 .TeX {
-    background: rgb(226,226,226);
-    background: linear-gradient(103deg, rgba(226,226,226,1) 0%, rgba(226,226,226,1) 100%);
-    color: #202020;
+	background: rgb(226, 226, 226);
+	background: linear-gradient(
+		103deg,
+		rgba(226, 226, 226, 1) 0%,
+		rgba(226, 226, 226, 1) 100%
+	);
+	color: #202020;
+}
+
+.TeX:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(226, 226, 226, 1));
 }
 
 .Swift {
-    background: rgb(255,90,58);
-    background: linear-gradient(103deg, rgba(255,90,58,1) 0%, rgba(255,100,70,1) 100%);
-    color: #411a08;
+	background: rgb(255, 90, 58);
+	background: linear-gradient(
+		103deg,
+		rgba(255, 90, 58, 1) 0%,
+		rgba(255, 100, 70, 1) 100%
+	);
+	color: #411a08;
+}
+
+.Swift:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(255, 90, 58, 1));
 }
 
 .Kotlin {
-    background: rgb(204,92,172);
-    background: linear-gradient(103deg, rgba(204,92,172,1) 0%, rgba(234,122,62,1) 85%);
-    color: rgb(41, 5, 43);
+	background: rgb(204, 92, 172);
+	background: linear-gradient(
+		103deg,
+		rgba(204, 92, 172, 1) 0%,
+		rgba(234, 122, 62, 1) 85%
+	);
+	color: rgb(41, 5, 43);
+}
+
+.Kotlin:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(204, 92, 172, 1));
 }
 
 .Dart {
-    background: rgb(42,56,104);
-    background: linear-gradient(103deg, rgba(42,56,104,1) 0%, rgba(49,61,102,1) 100%);
-    color: #a7bbff;
+	background: rgb(0, 196, 179);
+	background: linear-gradient(
+		103deg,
+		rgba(0, 196, 179, 1) 0%,
+		rgba(34, 211, 197, 1) 100%
+	);
+	color: #363233;
+}
+
+.Dart:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(0, 196, 179, 1));
 }
 
 .Gherkin {
-    background: rgb(79,42,104);
-    background: linear-gradient(103deg, rgba(79,42,104,1) 0%, rgba(82,50,105,1) 100%);
-    color: #e2c4f7;
+	background: rgb(79, 42, 104);
+	background: linear-gradient(
+		103deg,
+		rgba(79, 42, 104, 1) 0%,
+		rgba(82, 50, 105, 1) 100%
+	);
+	color: #e2c4f7;
+}
+
+.Gherkin:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(79, 42, 104, 1));
 }
 
 .Objective-C {
-    background: rgb(0,0,0);
-    background: linear-gradient(103deg, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 100%);
-    color: #dadada;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		103deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(20, 20, 20, 1) 100%
+	);
+	color: #dadada;
 }
 
-.Rebol, .C, .PureBasic, .Makefile, .Visual, .D, .Lisp, .TSQL, .HCL {
-    background: rgb(66,66,66);
-    background: linear-gradient(103deg, rgba(66,66,66,1) 0%, rgba(66,66,66,1) 100%);
-    color: #dddddd;
+.Objective-C:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 1));
 }
 
-.R, .Jsonnet {
-    background: rgb(190,192,195);
-    background: linear-gradient(103deg, rgba(190,192,195,1) 0%, rgba(205,206,209,1) 100%);
-    color: #0a396e;
+.Rebol,
+.C,
+.PureBasic,
+.Makefile,
+.Visual,
+.D,
+.Lisp,
+.TSQL,
+.HCL,
+.Emacs,
+.OCaml {
+	background: rgb(66, 66, 66);
+	background: linear-gradient(
+		103deg,
+		rgba(66, 66, 66, 1) 0%,
+		rgba(66, 66, 66, 1) 100%
+	);
+	color: #dddddd;
 }
 
-.PowerShell, .Shell {
-    background: rgb(2,2,2);
-    background: linear-gradient(103deg, rgba(2,2,2,1) 0%, rgba(17,17,17,1) 85%);
-    color: #1fbb1f;
+.Rebol:hover,
+.C:hover,
+.PureBasic:hover,
+.Makefile:hover,
+.Visual:hover,
+.D:hover,
+.Lisp:hover,
+.TSQL:hover,
+.HCL:hover,
+.Emacs:hover,
+.OCaml:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(66, 66, 66, 1));
+}
+
+.R,
+.Jsonnet {
+	background: rgb(190, 192, 195);
+	background: linear-gradient(
+		103deg,
+		rgba(190, 192, 195, 1) 0%,
+		rgba(205, 206, 209, 1) 100%
+	);
+	color: #0a396e;
+}
+
+.R:hover,
+.Jsonnet:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(190, 192, 195, 1));
+}
+
+.PowerShell,
+.Shell {
+	background: rgb(2, 2, 2);
+	background: linear-gradient(
+		103deg,
+		rgba(2, 2, 2, 1) 0%,
+		rgba(17, 17, 17, 1) 85%
+	);
+	color: #1fbb1f;
+}
+
+.PowerShell:hover,
+.Shell:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(2, 2, 2, 1));
 }
 
 .Cuda {
-    background: rgb(26,25,24);
-    background: linear-gradient(103deg, rgba(26,25,24,1) 0%, rgba(34,33,32,1) 100%);
-    color: #7ab547;
+	background: rgb(26, 25, 24);
+	background: linear-gradient(
+		103deg,
+		rgba(26, 25, 24, 1) 0%,
+		rgba(34, 33, 32, 1) 100%
+	);
+	color: #7ab547;
+}
+
+.Cuda:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(26, 25, 24, 1));
 }
 
 .Lua {
-    background: rgb(112,129,202);
-    background: linear-gradient(103deg, rgba(112,129,202,1) 0%, rgba(118,133,200,1) 100%);
-    color: #001263;
+	background: rgb(112, 129, 202);
+	background: linear-gradient(
+		103deg,
+		rgba(112, 129, 202, 1) 0%,
+		rgba(118, 133, 200, 1) 100%
+	);
+	color: #001263;
+}
+
+.Lua:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(112, 129, 202, 1));
 }
 
 .PHP {
-    background: rgb(112,129,202);
-    background: linear-gradient(103deg, rgba(112,129,202,1) 0%, rgba(112,129,202,1) 100%);
-    color: #000311;
+	background: rgb(112, 129, 202);
+	background: linear-gradient(
+		103deg,
+		rgba(112, 129, 202, 1) 0%,
+		rgba(112, 129, 202, 1) 100%
+	);
+	color: #000311;
+}
+
+.PHP:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(112, 129, 202, 1));
 }
 
 .Ruby {
-    background: rgb(202,102,102);
-    background: linear-gradient(103deg, rgba(202,102,102,1) 0%, rgba(202,102,102,1) 100%);
-    color: #580000;
+	background: rgb(202, 102, 102);
+	background: linear-gradient(
+		103deg,
+		rgba(202, 102, 102, 1) 0%,
+		rgba(202, 102, 102, 1) 100%
+	);
+	color: #580000;
+}
+
+.Ruby:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(202, 102, 102, 1));
 }
 
 .CoffeeScript {
-    background: rgb(143,112,81);
-    background: linear-gradient(103deg, rgba(143,112,81,1) 0%, rgba(143,112,81,1) 100%);
-    color: #3f1f00;
+	background: rgb(143, 112, 81);
+	background: linear-gradient(
+		103deg,
+		rgba(143, 112, 81, 1) 0%,
+		rgba(143, 112, 81, 1) 100%
+	);
+	color: #3f1f00;
+}
+
+.CoffeeScript:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(143, 112, 81, 1));
 }
 
 .Rust {
-    background: rgb(189,140,125);
-    background: linear-gradient(103deg, rgba(189,140,125,1) 0%, rgba(189,140,125,1) 100%);
-    color: #2e0b00;
+	background: rgb(189, 140, 125);
+	background: linear-gradient(
+		103deg,
+		rgba(189, 140, 125, 1) 0%,
+		rgba(189, 140, 125, 1) 100%
+	);
+	color: #2e0b00;
+}
+
+.Rust:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(189, 140, 125, 1));
 }
 
 .Dockerfile {
-    background: rgb(13,183,237);
-    background: linear-gradient(103deg, rgba(13,183,237,1) 0%, rgba(13,183,237,1) 100%);
-    color: #0f3642;
+	background: rgb(13, 183, 237);
+	background: linear-gradient(
+		103deg,
+		rgba(13, 183, 237, 1) 0%,
+		rgba(13, 183, 237, 1) 100%
+	);
+	color: #0f3642;
 }
 
-.null, .AutoHotkey {
-    background: rgb(49,56,61);
-    background: linear-gradient(103deg, rgba(49,56,61,1) 0%, rgba(49,56,61,1) 100%);
-    color: #e6e6e6;
+.Dockerfile:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(13, 183, 237, 1));
+}
+
+.null,
+.AutoHotkey {
+	background: rgb(49, 56, 61);
+	background: linear-gradient(
+		103deg,
+		rgba(49, 56, 61, 1) 0%,
+		rgba(49, 56, 61, 1) 100%
+	);
+	color: #e6e6e6;
+}
+
+.null:hover,
+.AutoHotkey:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(49, 56, 61, 1));
 }

@@ -1,73 +1,75 @@
 .card {
-    transition: all .2s ease-in-out;
-    background: #24292d;
-    color: #fff;
-    pointer-events: none;
-    border: 0 !important;
+	transition: all 0.3s ease-in-out;
+	background: #24292d;
+	color: #fff;
+	pointer-events: none;
+	border: 0 !important;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
+/* .card:hover {
+	opacity: 0.8;
+	filter: brightness(85%);
+} */
 
 .card-link {
-    pointer-events: auto;
-    transition: all .2s ease-in-out;
+	pointer-events: auto;
+	transition: all 0.2s ease-in-out;
 }
 
 .card-link:hover {
-    text-decoration: none;
-    cursor: pointer;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .all-links {
-    pointer-events: auto;
-    transition: all .2s ease-in-out;
+	pointer-events: auto;
+	transition: all 0.2s ease-in-out;
 }
 
 .all-links:hover {
-    text-decoration: none;
-    cursor: pointer;
-    transform: scale(1);
+	text-decoration: none;
+	cursor: pointer;
+	transform: scale(1);
 }
 
 .medium {
-    font-weight: 500;
-    /* text-decoration: underline; */
+	font-weight: 500;
+	/* text-decoration: underline; */
 }
 
 .bold {
-    font-weight: 700;
+	font-weight: 700;
 }
 
 .desc {
-    opacity: 1;
+	opacity: 1;
 }
 
 .background-none {
-    background: none !important;
+	background: none !important;
 }
 
-.card .pl-s, .card .pl-s .pl-pds {
-    color: #005499 !important;
+.card .pl-s,
+.card .pl-s .pl-pds {
+	color: #005499 !important;
 }
 
 .card .pl-k {
-    color: #6e00a1 !important;
+	color: #6e00a1 !important;
 }
 
 .card .pl-smi {
-    color: #00b76e !important;
+	color: #00b76e !important;
 }
 
 .card .blob-num {
-    color: rgb(0 0 0 / 60%) !important;
+	color: rgb(0 0 0 / 60%) !important;
 }
 
 .card .repo-language-color {
-    display: none;
+	display: none;
 }
 
 .octicon-grabber {
-    pointer-events: auto;
+	pointer-events: auto;
 }
