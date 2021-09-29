@@ -44,18 +44,14 @@
 }
 
 .Java {
-	background: rgb(238, 101, 101);
-	background: linear-gradient(
-		103deg,
-		rgba(238, 101, 101, 1) 0%,
-		rgba(238, 101, 101, 1) 100%
-	);
-	color: #290000;
-	border-color: #290000 !important;
+	background: #a02e59;
+	background: linear-gradient(103deg, #a02e59 0%, #a02e59 100%);
+	color: #fff9fc;
+	border-color: #fff9fc !important;
 }
 
 .Java:hover {
-	filter: drop-shadow(0 0 0.5rem rgba(238, 101, 101, 1));
+	filter: drop-shadow(0 0 0.5rem #a02e59);
 }
 
 .TypeScript {
@@ -74,12 +70,8 @@
 }
 
 .Python {
-	background: rgb(48, 96, 144);
-	background: linear-gradient(
-		103deg,
-		rgba(48, 96, 144, 1) 0%,
-		rgba(57, 100, 143, 1) 100%
-	);
+	background: #3b6da5;
+	background: linear-gradient(103deg, #3b6da5 0%, #3b6da5 100%);
 	color: #f7f7f7;
 	border-color: #f7f7f7 !important;
 }
@@ -121,33 +113,25 @@
 }
 
 .C\2b\2b {
-	background: rgb(0, 66, 131);
-	background: linear-gradient(
-		103deg,
-		rgba(0, 66, 131, 1) 0%,
-		rgba(0, 66, 131, 1) 100%
-	);
-	color: #c4e0ff;
-	border-color: #c4e0ff !important;
+	background: #2565ae;
+	background: linear-gradient(103deg, #2565ae 0%, #2565ae 100%);
+	color: #d5f3fe;
+	border-color: #d5f3fe !important;
 }
 
 .C\2b\2b:hover {
-	filter: drop-shadow(0 0 0.5rem rgba(0, 66, 131, 1));
+	filter: drop-shadow(0 0 0.5rem #2565ae);
 }
 
 .C\23 {
-	background: rgb(96, 34, 190);
-	background: linear-gradient(
-		103deg,
-		rgba(96, 34, 190, 1) 0%,
-		rgba(105, 49, 191, 1) 100%
-	);
-	color: #f0e6ff;
-	border-color: #f0e6ff !important;
+	background: #46457f;
+	background: linear-gradient(103deg, #46457f 0%, #46457f 100%);
+	color: #f2eaff;
+	border-color: #f2eaff !important;
 }
 
 .C\23:hover {
-	filter: drop-shadow(0 0 0.5rem rgba(96, 34, 190, 1));
+	filter: drop-shadow(0 0 0.5rem #46457f);
 }
 
 .CSS {
@@ -194,7 +178,7 @@
 }
 
 .Jupyter:hover {
-	filter: drop-shadow(0 0 0.5rem rgba(59, 59, 59, 1));
+	filter: drop-shadow(0 0 0.5rem #f37821);
 }
 
 .Vim,
@@ -245,18 +229,18 @@
 }
 
 .Kotlin {
-	background: rgb(204, 92, 172);
+	background: hsl(261, 96%, 72%);
 	background: linear-gradient(
 		103deg,
-		rgba(204, 92, 172, 1) 0%,
-		rgba(234, 122, 62, 1) 85%
+		hsl(261, 96%, 72%) 0%,
+		hsl(260, 96%, 72%) 85%
 	);
-	color: rgb(41, 5, 43);
-	border-color: rgb(41, 5, 43) !important;
+	color: #f5efff;
+	border-color: #f5efff !important;
 }
 
 .Kotlin:hover {
-	filter: drop-shadow(0 0 0.5rem rgba(204, 92, 172, 1));
+	filter: drop-shadow(0 0 0.5rem hsl(258, 96%, 72%));
 }
 
 .Dart {
@@ -370,7 +354,7 @@
 
 .PowerShell:hover,
 .Shell:hover {
-	filter: drop-shadow(0 0 0.5rem rgba(2, 2, 2, 1));
+	filter: drop-shadow(0 0 0.5rem #1fbb1f);
 }
 
 .Cuda {
@@ -385,7 +369,7 @@
 }
 
 .Cuda:hover {
-	filter: drop-shadow(0 0 0.5rem rgba(26, 25, 24, 1));
+	filter: drop-shadow(0 0 0.5rem #7ab547);
 }
 
 .Lua {
