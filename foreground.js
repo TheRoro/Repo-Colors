@@ -1,18 +1,62 @@
+const supportedLanguages = {
+	JavaScript: 1,
+	Vue: 1,
+	Java: 1,
+	TypeScript: 1,
+	Python: 1,
+	Go: 1,
+	HTML: 1,
+	'C++': 1,
+	'C#': 1,
+	CSS: 1,
+	SCSS: 1,
+	sass: 1,
+	Jupyter: 1,
+	Vim: 1,
+	VimL: 1,
+	TeX: 1,
+	Swift: 1,
+	Kotlin: 1,
+	Dart: 1,
+	Gherkin: 1,
+	'Objective-C': 1,
+	R: 1,
+	Powershell: 1,
+	Shell: 1,
+	Cuda: 1,
+	Lua: 1,
+	PHP: 1,
+	Ruby: 1,
+	CoffeeScript: 1,
+	Rust: 1,
+	Dockerfile: 1,
+	AutoHotkey: 1,
+	Rebol: 1,
+	C: 1,
+	PureBasic: 1,
+	Makefile: 1,
+	Visual: 1,
+	D: 1,
+	Lisp: 1,
+}
+
 function addLanguage(lang, card, span) {
-	span.classList.add(lang)
-	span.classList.add('background-none')
-	card.classList.add(language)
+	if (span) {
+		span.classList.add(lang)
+		span.classList.add('background-none')
+	}
+	card.classList.add(lang)
 }
 
 function addRepoIcon(card) {
-	var icon = card.getElementsByTagName('svg')[0]
+	let icon = card.getElementsByTagName('svg')[0]
 	if (icon) {
 		icon.classList.remove('color-text-secondary')
 	}
 }
 
 function addLinks(card, lang) {
-	var links = card.getElementsByTagName('a')
+	let links = card.getElementsByTagName('a')
 	for (let i = 0; i < links.length; i++) {
 		links[i].classList.add(lang)
 		links[i].classList.add('background-none')
@@ -26,24 +70,24 @@ function addLinks(card, lang) {
 	}
 }
 
-function addOwner(card) {
-	var owner = card.getElementsByClassName('owner')
+function addOwner(card, lang) {
+	let owner = card.getElementsByClassName('owner')
 	if (owner.length > 0) {
-		owner[0].classList.add(language)
+		owner[0].classList.add(lang)
 		owner[0].classList.add('background-none')
 		owner[0].classList.add('bold')
 	}
 }
 
-function addTitle(card) {
-	var title = card.getElementsByClassName('repo')
-	title[0].classList.add(language)
+function addTitle(card, lang) {
+	let title = card.getElementsByClassName('repo')
+	title[0].classList.add(lang)
 	title[0].classList.add('bold')
 	title[0].classList.add('background-none')
 }
 
 function addLabel(card, lang) {
-	var label = card.getElementsByClassName('Label')
+	let label = card.getElementsByClassName('Label')
 	if (label.length > 0) {
 		label[0].classList.add(lang)
 		label[0].classList.remove('Label--secondary')
@@ -52,7 +96,7 @@ function addLabel(card, lang) {
 }
 
 function addDescription(card, lang) {
-	var desc = card.getElementsByClassName('pinned-item-desc')
+	let desc = card.getElementsByClassName('pinned-item-desc')
 	if (desc.length > 0 && desc[0]) {
 		desc[0].classList.add(lang)
 		desc[0].classList.add('desc')
@@ -62,7 +106,7 @@ function addDescription(card, lang) {
 }
 
 function addForkedText(card) {
-	var forked = card.getElementsByClassName('color-fg-muted')
+	let forked = card.getElementsByClassName('color-fg-muted')
 	if (
 		forked.length > 0 &&
 		forked[0].nodeName == 'P' &&
@@ -79,7 +123,7 @@ function addForkedText(card) {
 }
 
 function addExtraIcons(card, lang) {
-	var extras = card.getElementsByClassName('pinned-item-meta')
+	let extras = card.getElementsByClassName('pinned-item-meta')
 	if (extras.length > 0 && extras[0]) {
 		for (let i = 0; i < extras.length; i++) {
 			const element = extras[i]
@@ -91,106 +135,84 @@ function addExtraIcons(card, lang) {
 }
 
 function addGrabbers(card, lang) {
-	var grabbers = card.getElementsByClassName('octicon-grabber')
+	let grabbers = card.getElementsByClassName('octicon-grabber')
 	if (grabbers.length > 0) {
 		grabbers[0].classList.add(lang)
 		grabbers[0].classList.add('background-none')
 	}
 }
 
-function addGistIcon(card) {
-	var codeIcon = card.getElementsByClassName('octicon-code-square')
+function addGistIcon(card, lang) {
+	let codeIcon = card.getElementsByClassName('octicon-code-square')
 	if (codeIcon.length > 0) {
-		codeIcon[0].classList.add('none')
+		codeIcon[0].classList.add(lang)
 		codeIcon[0].classList.add('background-none')
 		codeIcon[0].classList.remove('color-text-secondary')
 	}
 }
 
-function addGistBackground(card) {
-	var bgGist = card.getElementsByClassName('rounded-bottom-1')
+function addGistBackground(card, lang) {
+	let bgGist = card.getElementsByClassName('rounded-bottom-1')
 	if (bgGist.length > 0 && bgGist[0]) {
-		bgGist[0].classList.add('none')
+		bgGist[0].classList.add(lang)
 		bgGist[0].classList.add('background-none')
 		bgGist[0].classList.remove('color-bg-subtle')
 	}
 }
 
 //Get all cards from profile
-var cards = document.getElementsByClassName('pinned-item-list-item')
+let cards = document.getElementsByClassName('pinned-item-list-item')
 
-for (let i = 0; i < cards.length; i++) {
-	cards[i].classList.add('card')
+for (const card of cards) {
+	card.classList.add('card')
 
-	//Get all programming languages for each card
-	var languageSpan = cards[i].querySelector('[itemprop=programmingLanguage]')
+	//Get programming language for a card
+	let languageSpan = card.querySelector('[itemprop=programmingLanguage]')
+	let language = 'none'
 	if (languageSpan) {
 		//Get programming language first name
 		//Composed names like: "Jupyter Notebook" stay as "Jupyter"
-		var language = languageSpan.innerHTML.split(' ')
-		language = language[0]
-
-		// Add programming name CSS class to span and card
-		addLanguage(language, cards[i], languageSpan)
-
-		// Remove default color from Repo Icon
-		addRepoIcon(cards[i])
-
-		//Link to repo
-		addLinks(cards[i], language)
-
-		//Owner of repo (for repos not owned by the user)
-		addOwner(cards[i])
-
-		//Card title of Repo
-		addTitle(cards[i])
-
-		//Public/Private Repo Label
-		addLabel(cards[i], language)
-
-		//Card description of Repo
-		addDescription(cards[i], language)
-
-		//"Forked From" text
-		addForkedText(cards[i])
-
-		//Star and Fork icon
-		addExtraIcons(cards[i], language)
-
-		//Drag and Drop Grabber for repository cards
-		addGrabbers(cards[i], language)
-	} else {
-		//When card does not have a programming language
-		cards[i].classList.add('none')
-		var title = cards[i].getElementsByClassName('repo')
-		title[0].classList.add('none')
-		title[0].classList.add('bold')
-
-		//Link to repo
-		addLinks(cards[i], 'none')
-
-		//Public/Private Repo Label
-		addLabel(cards[i], 'none')
-
-		// Remove default color from Repo Icon
-		addRepoIcon(cards[i])
-
-		//Card description
-		addDescription(cards[i], 'none')
-
-		//"Forked From" text
-		addForkedText(cards[i])
-
-		//Star and Fork icon
-		addExtraIcons(cards[i], 'none')
-
-		//Drag and Drop Grabber for repository cards
-		addGrabbers(cards[i], 'none')
-
-		//Code Icon for gists
-		addGistIcon(cards[i])
-
-		//Backgroung for gists preview
-		addGistBackground(cards[i])
+		language = languageSpan.innerHTML.split(' ')[0]
+		//Validate if it is a supported language
+		if (language in supportedLanguages) {
+			language = language
+		} else {
+			language = 'none'
+		}
 	}
+	// Add programming name CSS class to span and card
+	addLanguage(language, card, languageSpan)
+
+	//Card title of Repo
+	addTitle(card, language)
+
+	//Link to repo
+	addLinks(card, language)
+
+	//Public/Private Repo Label
+	addLabel(card, language)
+
+	// Remove default color from Repo Icon
+	addRepoIcon(card)
+
+	//Card description of Repo
+	addDescription(card, language)
+
+	//"Forked From" text
+	addForkedText(card)
+
+	//Owner of repo (for repos not owned by the user)
+	addOwner(card, language)
+
+	//Star and Fork icon
+	addExtraIcons(card, language)
+
+	//Drag and Drop Grabber for repository cards
+	addGrabbers(card, language)
+
+	//Code Icon for gists
+	addGistIcon(card, language)
+
+	//Backgroung for gists preview
+	addGistBackground(card, language)
 }
