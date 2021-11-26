@@ -228,6 +228,21 @@
 	filter: drop-shadow(0 0 0.5rem rgba(255, 90, 58, 1));
 }
 
+.Svelte {
+	background: rgb(255, 90, 58);
+	background: linear-gradient(
+		103deg,
+		rgb(250, 112, 85) 0%,
+		rgb(255, 110, 82) 100%
+	);
+	color: #2a2a2a;
+	border-color: #2a2a2a !important;
+}
+
+.Svelte:hover {
+	filter: drop-shadow(0 0 0.5rem rgba(255, 110, 82));
+}
+
 .Kotlin {
 	background: hsl(261, 96%, 72%);
 	background: linear-gradient(
