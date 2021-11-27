@@ -6,11 +6,6 @@
 	border: 0 !important;
 }
 
-/* .card:hover {
-	opacity: 0.8;
-	filter: brightness(85%);
-} */
-
 .card-link {
 	pointer-events: auto;
 	transition: all 0.2s ease-in-out;
@@ -19,6 +14,14 @@
 .card-link:hover {
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.opacity-9 {
+	opacity: 0.9;
+}
+
+.opacity-10 {
+	opacity: 1;
 }
 
 .all-links {
