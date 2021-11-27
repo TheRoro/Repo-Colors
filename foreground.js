@@ -16,6 +16,7 @@ const supportedLanguages = {
 	VimL: 1,
 	TeX: 1,
 	Swift: 1,
+	Svelte: 1,
 	Kotlin: 1,
 	Dart: 1,
 	Gherkin: 1,
@@ -52,6 +53,7 @@ function addRepoIcon(card) {
 	let icon = card.getElementsByTagName('svg')[0]
 	if (icon) {
 		icon.classList.remove('color-text-secondary')
+		icon.classList.remove('color-fg-muted')
 	}
 }
 
