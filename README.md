@@ -1,22 +1,24 @@
+<img align="left" width="80" height="80" src="https://raw.githubusercontent.com/TheRoro/Repo-Colors/main/icons/128.png" alt="Repo Colors - Beautiful colors for your pinned repositories">
+
 # Repo Colors
 
-<img  style="display:inline-block"  alt="Portfolio"  height="80px"  src="https://raw.githubusercontent.com/8rb/Repo-Colors/master/icons/128.png" /> 
- 
-This extension will make your repositories look stunning and will give personality to your profile. The repository's color will match the primary language/technology of its development. Additionally, every language has a carefully chosen unique color palette based on the programming language/technology logo.
+### Beautiful colors for your pinned repositories
 
-#### How it looks in the different Github Themes:
+[**Repo Colors**](https://chrome.google.com/webstore/detail/repo-colors/ahhjhoodedfhbolbkfifengmbnhemjoj) is a chrome extension that will make your repositories look stunning and will give personality to your profile. The repository's color will match the primary language/technology of its development. Additionally, every language has a carefully chosen unique color palette based on the programming language/technology logo.
+
+### How it looks in the different Github Themes:
 
 ### Dark (Default):
 
-<img  style="display:inline-block"  alt="dark-theme" style="max-width:100%;" src="https://raw.githubusercontent.com/8rb/Repo-Colors/master/assets/Sample-Dark-Default.png" />
+<img  style="display:inline-block"  alt="dark-theme" style="max-width:100%;" src="https://raw.githubusercontent.com/TheRoro/Repo-Colors/main/assets/Dark-Default.png" />
 
 ### Dark Dimmed:
 
-<img  style="display:inline-block" alt="dark-dimmed" style="max-width:100%;" src="https://raw.githubusercontent.com/8rb/Repo-Colors/master/assets/Sample-Dark-Dimmed.png" />
+<img  style="display:inline-block" alt="dark-dimmed" style="max-width:100%;" src="https://raw.githubusercontent.com/TheRoro/Repo-Colors/main/assets/Dark-Dimmed.png" />
 
 ### Light:
 
-<img  style="display:inline-block" alt="Portfolio" style="max-width:100%;" src="https://raw.githubusercontent.com/8rb/Repo-Colors/master/assets/Sample-Light.png" />
+<img  style="display:inline-block" alt="Portfolio" style="max-width:100%;" src="https://raw.githubusercontent.com/TheRoro/Repo-Colors/main/assets/Light-Default.png" />
 
 🎨 Repo Colors 🎨 currently has color support for this technologies:
 
@@ -35,6 +37,7 @@ This extension will make your repositories look stunning and will give personali
 - Vim, VimL
 - TeX
 - Swift
+- Svelte
 - Kotlin
 - Dart
 - Gherkin
